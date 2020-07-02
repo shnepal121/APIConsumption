@@ -14,7 +14,8 @@
 *@
 
 @foreach (APIConsumption.Models.Parks p in Model.data)
-{ 
-    @(p.parkCode+" "+p.states)
-    <br />
+{
+    @("National Park "+ p.fullName + " and Lies in " +p.states+ "  " +p.weatherInfo)
+    <p />
+
 }
